@@ -1,0 +1,33 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Ut aliquam mauris ac sapien volutpat elementum. Sed hendrerit vel mauris id facilisis. Mauris id neque vel diam lacinia luctus non nec ex. Nullam viverra sit amet dolor sit amet convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "8ef79db0-15e2-11f0-9be7-3da24f18ba46"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "6aa0ccf0-ae82-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "6aa0ccf0-ae82-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "AssetTest",
+    "name" : "AssetTest",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

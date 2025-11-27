@@ -1,0 +1,30 @@
+{
+  "entityType" : "OTA_PACKAGE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Curabitur feugiat purus nec massa egestas, a sagittis magna imperdiet. Pellentesque eu eros a nisl ultrices posuere at in purus. Nulla tincidunt diam lectus. Phasellus ac tempus mi, sed dignissim est. Maecenas convallis libero et justo commodo sodales in at ex. In ut diam in lectus bibendum vestibulum. Nullam augue sapien, laoreet eget tellus eu, pulvinar vehicula tellus. Donec iaculis ornare eros, ut bibendum nisi sodales vel. Donec quis lacinia eros."
+    },
+    "checksum" : "dfa657f1d168b201aa33d6fc9f0ab22edf64cfaea254e1be1569668646a5844c",
+    "checksumAlgorithm" : "SHA256",
+    "contentType" : "text/javascript",
+    "data" : "ZXhwb3J0IGNvbnN0IGNvbG9yID0gJyYjMTEwNDQ7JzsKCmV4cG9ydCBjb25zdCBnZXRTdGF0dXNTdHlsZXMgPSAodmFsdWUpID0+IHsKICBsZXQgY29sb3I7CiAgaWYgKHZhbHVlKSB7CiAgICBjb2xvciA9ICdyZ2IoMzksIDEzNCwgMzQpJzsKICB9IGVsc2UgewogICAgY29sb3IgPSAncmdiKDI1NSwgMCwgMCknOwogIH0KICByZXR1cm4gewogICAgY29sb3I6IGNvbG9yLAogICAgZm9udFNpemU6ICcxOHB4JwogIH07Cn07Cg==",
+    "dataSize" : 241,
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "8ef3f430-15e2-11f0-9be7-3da24f18ba46"
+    },
+    "externalId" : null,
+    "fileName" : "module_smoke.js",
+    "hasData" : true,
+    "id" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "18e9c360-ad99-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "name" : "Smoke test 2",
+    "tag" : "Smoke test 2 ver2",
+    "title" : "Smoke test 2",
+    "type" : "SOFTWARE",
+    "url" : null,
+    "version" : "ver2"
+  }
+}

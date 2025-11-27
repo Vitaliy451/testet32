@@ -1,0 +1,25 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "vitaliy_tenant_bundle_test",
+    "description" : null,
+    "externalId" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "245eacb0-1604-11f0-ac79-a9c35108d2de"
+    },
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "245eacb0-1604-11f0-ac79-a9c35108d2de"
+    },
+    "image" : "tb-image;/api/images/tenant/24mb.jpg",
+    "name" : "Vitaliy tenant bundle test",
+    "order" : null,
+    "scada" : false,
+    "title" : "Vitaliy tenant bundle test"
+  },
+  "fqns" : [ "vitaliy_tenants_time_series", "vitalii_tenant_widget", "hp_wind_turbine", "hp_wind_turbine2", "hp_wind_turbine3", "alien_svgrepo_com_svg", "aw_test", "ls_widget", "static_widget", "sw_widget" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

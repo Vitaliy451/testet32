@@ -1,0 +1,91 @@
+{
+  "entityType" : "ENTITY_VIEW",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "endTimeMs" : 0,
+    "entityId" : {
+      "entityType" : "DEVICE",
+      "id" : "c4fe4660-24e3-11f0-9149-1b9c175ccfa6"
+    },
+    "externalId" : null,
+    "keys" : {
+      "attributes" : {
+        "cs" : null,
+        "sh" : null,
+        "ss" : null
+      },
+      "timeseries" : null
+    },
+    "name" : "elf_view",
+    "startTimeMs" : 0,
+    "type" : "Mambo",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "04824690-9534-11f0-a580-cf0c98df7704"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "04824690-9534-11f0-a580-cf0c98df7704"
+    },
+    "to" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "bc754c80-9533-11f0-a580-cf0c98df7704"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 123724
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"msg\":\"hello\"}",
+      "key" : "er7",
+      "lastUpdateTs" : 1758290333574,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ijou",
+      "lastUpdateTs" : 1758290224887,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ryhtyh",
+      "lastUpdateTs" : 1758290121809,
+      "longValue" : 45,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "yfhr",
+      "lastUpdateTs" : 1758290116744,
+      "longValue" : null,
+      "strValue" : "r6yhr6"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 56.53,
+      "jsonValue" : null,
+      "key" : "ythbnyt",
+      "lastUpdateTs" : 1758290138413,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

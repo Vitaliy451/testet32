@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "smoke_test_bundle",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "09314ab0-ab64-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "image" : "tb-image;/api/images/tenant/2071669.png",
+    "name" : "Smoke test bundle",
+    "order" : null,
+    "scada" : false,
+    "title" : "Smoke test bundle"
+  },
+  "fqns" : [ "static_widg", "alarm_test", "cw_test", "ts_chart", "ls_widget3" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

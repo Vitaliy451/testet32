@@ -1,0 +1,154 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "4112e8a0-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "41153290-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "Wheat",
+    "name" : "SI Field 1",
+    "ownerId" : null,
+    "type" : "SI Field"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "41153290-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4125ad50-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "FieldToWaterMeter",
+    "typeGroup" : "COMMON",
+    "version" : 134183
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "41153290-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4134ef90-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "FieldToSmartValve",
+    "typeGroup" : "COMMON",
+    "version" : 134184
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "41153290-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "413f01b0-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "FieldToMoistureSensor",
+    "typeGroup" : "COMMON",
+    "version" : 134185
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "41153290-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4145df80-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "FieldToMoistureSensor",
+    "typeGroup" : "COMMON",
+    "version" : 134186
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "41153290-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "414d5990-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "FieldToMoistureSensor",
+    "typeGroup" : "COMMON",
+    "version" : 134187
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "41153290-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "41548581-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "FieldToMoistureSensor",
+    "typeGroup" : "COMMON",
+    "version" : 134188
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "criticalAlarmsCount",
+      "lastUpdateTs" : 1761227449750,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cropType",
+      "lastUpdateTs" : 1761227437131,
+      "longValue" : null,
+      "strValue" : "wheat"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "majorAlarmsCount",
+      "lastUpdateTs" : 1761227449750,
+      "longValue" : 4,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 75.0,
+      "jsonValue" : null,
+      "key" : "maxMoistureThreshold",
+      "lastUpdateTs" : 1761227437131,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 25.0,
+      "jsonValue" : null,
+      "key" : "minMoistureThreshold",
+      "lastUpdateTs" : 1761227437131,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "[[49.348444078486665,32.113723756657556],[49.35782580854662,32.10142806361495],[49.36209942574998,32.110204693549484],[49.35267945867829,32.122306811750974]]",
+      "key" : "perimeter",
+      "lastUpdateTs" : 1761227437131,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

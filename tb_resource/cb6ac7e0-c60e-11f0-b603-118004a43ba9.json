@@ -1,0 +1,25 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IFRFU1RfU1RSSU5HID0gIsbHIjs=",
+    "descriptor" : null,
+    "etag" : "86e01ec67e57baf4f9d433a0d92e850fe2b0489a7df426c29fb9bd678d21d69d",
+    "externalId" : null,
+    "fileName" : "gg.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "cb6ac7e0-c60e-11f0-b603-118004a43ba9"
+    },
+    "link" : "/api/resource/js_module/tenant/gg.js",
+    "name" : "gg",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "gg.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "gg"
+  }
+}

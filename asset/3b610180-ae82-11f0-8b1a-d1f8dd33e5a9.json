@@ -1,0 +1,33 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel leo ut nibh facilisis cursus vitae vel leo. Pellentesque sed placerat risus, et suscipit lorem. Nullam id feugiat massa. Integer mollis imperdiet sagittis. Cras id aliquam dolor. Nunc nec consectetur massa. Proin consectetur luctus dolor vitae molestie."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "89485fc0-7141-11f0-ba77-abb3c210cae5"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "3b610180-ae82-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "3b610180-ae82-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "smokeAsset",
+    "name" : "smokeAsset",
+    "ownerId" : null,
+    "type" : "test"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

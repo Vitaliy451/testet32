@@ -1,0 +1,39 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "analytics",
+              "color" : "#FF0000"
+            },
+            "actionButtonConfig" : null
+          },
+          "body" : "PE device activated",
+          "enabled" : true,
+          "subject" : "PE device activated"
+        },
+        "SLACK" : {
+          "method" : "SLACK",
+          "body" : "PE device activated",
+          "enabled" : true
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "b52e5ba0-5362-11f0-af2e-d37affc28189"
+    },
+    "name" : "Test template",
+    "notificationType" : "DEVICE_ACTIVITY"
+  }
+}

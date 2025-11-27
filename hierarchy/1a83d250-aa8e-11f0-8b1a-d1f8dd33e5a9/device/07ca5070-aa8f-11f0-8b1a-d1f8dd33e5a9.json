@@ -1,0 +1,133 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "1a83d250-aa8e-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "LWM2M",
+        "edrxCycle" : null,
+        "pagingTransmissionWindow" : null,
+        "powerMode" : null,
+        "psmActivityTimer" : null
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e6378470-4835-11f0-9796-0d789fd1d250"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "07ca5070-aa8f-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "firmwareId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "066e8320-ae83-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "07ca5070-aa8f-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "",
+    "name" : "Device test",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "1a83d250-aa8e-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "softwareId" : null,
+    "type" : "Default Test"
+  },
+  "credentials" : {
+    "credentialsId" : "qzEQPQYmdiJniVbFdyMg",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1761054740623,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_id",
+      "lastUpdateTs" : 1761127194740,
+      "longValue" : null,
+      "strValue" : "066e8320-ae83-11f0-8b1a-d1f8dd33e5a9"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1760619791296,
+      "longValue" : 1760619791294,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_checksum",
+      "lastUpdateTs" : 1761127194740,
+      "longValue" : null,
+      "strValue" : "ffed1d1eada35ffcbde19596c3145ac43a280a57ffdce75f07aac32688827306"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_checksum_algorithm",
+      "lastUpdateTs" : 1761127194740,
+      "longValue" : null,
+      "strValue" : "SHA256"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_size",
+      "lastUpdateTs" : 1761127194740,
+      "longValue" : 34,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_tag",
+      "lastUpdateTs" : 1761127194740,
+      "longValue" : null,
+      "strValue" : "test test"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_title",
+      "lastUpdateTs" : 1761127194740,
+      "longValue" : null,
+      "strValue" : "test"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_version",
+      "lastUpdateTs" : 1761127194740,
+      "longValue" : null,
+      "strValue" : "test"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

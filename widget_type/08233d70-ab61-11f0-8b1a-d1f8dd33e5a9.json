@@ -1,0 +1,68 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "ls_widget3",
+    "name" : "LS widget",
+    "deprecated" : false,
+    "image" : "tb-image;/api/images/tenant/code-coding-script-svgrepo-com_(1).svg",
+    "description" : null,
+    "descriptor" : {
+      "type" : "latest",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "",
+      "templateCss" : "#container {\n    overflow: auto;\n}\n\n.tbDatasource-container {\n    margin: 5px;\n    padding: 8px;\n}\n\n.tbDatasource-title {\n    font-size: 1.200rem;\n    font-weight: 500;\n    padding-bottom: 10px;\n}\n\n.tbDatasource-table {\n    width: 100%;\n    box-shadow: 0 0 10px #ccc;\n    border-collapse: collapse;\n    white-space: nowrap;\n    font-size: 1.000rem;\n    color: #757575;\n}\n\n.tbDatasource-table td {\n    position: relative;\n    border-top: 1px solid rgba(0, 0, 0, 0.12);\n    border-bottom: 1px solid rgba(0, 0, 0, 0.12);\n    padding: 0px 18px;\n    box-sizing: border-box;\n}",
+      "controllerScript" : {
+        "body" : "console.log(a.text);\nconsole.log(b.color);\n\nself.onInit = function() {\n    \n    self.ctx.datasourceTitleCells = [];\n    self.ctx.valueCells = [];\n    self.ctx.labelCells = [];\n    \n    for (var i=0; i < self.ctx.datasources.length; i++) {\n        var tbDatasource = self.ctx.datasources[i];\n\n        var datasourceId = 'tbDatasource' + i;\n        self.ctx.$container.append(\n            \"<div id='\" + datasourceId +\n            \"' class='tbDatasource-container'></div>\"\n        );\n\n        var datasourceContainer = $('#' + datasourceId,\n            self.ctx.$container);\n\n        datasourceContainer.append(\n            \"<div class='tbDatasource-title'>\" +\n            tbDatasource.name + \"</div>\"\n        );\n        \n        var datasourceTitleCell = $('.tbDatasource-title', datasourceContainer);\n        self.ctx.datasourceTitleCells.push(datasourceTitleCell);\n        \n        var tableId = 'table' + i;\n        datasourceContainer.append(\n            \"<table id='\" + tableId +\n            \"' class='tbDatasource-table'><col width='30%'><col width='70%'></table>\"\n        );\n        var table = $('#' + tableId, self.ctx.$container);\n\n        for (var a = 0; a < tbDatasource.dataKeys.length; a++) {\n            var dataKey = tbDatasource.dataKeys[a];\n            var labelCellId = 'labelCell' + a;\n            var cellId = 'cell' + a;\n            table.append(\"<tr><td id='\" + labelCellId + \"'>\" + dataKey.label +\n                \"</td><td id='\" + cellId +\n                \"'></td></tr>\");\n            var labelCell = $('#' + labelCellId, table);\n            self.ctx.labelCells.push(labelCell);\n            var valueCell = $('#' + cellId, table);\n            self.ctx.valueCells.push(valueCell);\n        }\n    }    \n    \n    self.onResize();\n}\n\nself.onDataUpdated = function() {\n    for (var i = 0; i < self.ctx.valueCells.length; i++) {\n        var cellData = self.ctx.data[i];\n        if (cellData && cellData.data && cellData.data.length > 0) {\n            var tvPair = cellData.data[cellData.data.length -\n                1];\n            var value = tvPair[1];\n            var textValue;\n            //toDo -> + IsNumber\n            \n            if (isNumber(value)) {\n                var decimals = self.ctx.decimals;\n                var units = self.ctx.units;\n                if (cellData.dataKey.decimals || cellData.dataKey.decimals === 0) {\n                    decimals = cellData.dataKey.decimals;\n                }\n                if (cellData.dataKey.units) {\n                    units = cellData.dataKey.units;\n                }\n                txtValue = self.ctx.utils.formatValue(value, decimals, units, true);\n            } else {\n                txtValue = value;\n            }\n            self.ctx.valueCells[i].html(txtValue);\n        }\n    }\n    \n    function isNumber(n) {\n        return !isNaN(parseFloat(n)) && isFinite(n);\n    }\n}\n\nself.onResize = function() {\n    var datasourceTitleFontSize = self.ctx.height/8;\n    if (self.ctx.width/self.ctx.height <= 1.5) {\n        datasourceTitleFontSize = self.ctx.width/12;\n    }\n    datasourceTitleFontSize = Math.min(datasourceTitleFontSize, 20);\n    for (var i = 0; i < self.ctx.datasourceTitleCells.length; i++) {\n        self.ctx.datasourceTitleCells[i].css('font-size', datasourceTitleFontSize+'px');\n    }\n    var valueFontSize = self.ctx.height/9;\n    var labelFontSize = self.ctx.height/9;\n    if (self.ctx.width/self.ctx.height <= 1.5) {\n        valueFontSize = self.ctx.width/15;\n        labelFontSize = self.ctx.width/15;\n    }\n    valueFontSize = Math.min(valueFontSize, 18);\n    labelFontSize = Math.min(labelFontSize, 18);\n\n    for (i = 0; i < self.ctx.valueCells; i++) {\n        self.ctx.valueCells[i].css('font-size', valueFontSize+'px');\n        self.ctx.valueCells[i].css('height', valueFontSize*2.5+'px');\n        self.ctx.valueCells[i].css('padding', '0px ' + valueFontSize + 'px');\n        self.ctx.labelCells[i].css('font-size', labelFontSize+'px');\n        self.ctx.labelCells[i].css('height', labelFontSize*2.5+'px');\n        self.ctx.labelCells[i].css('padding', '0px ' + labelFontSize + 'px');\n    }    \n}\n\nself.onDestroy = function() {\n}\n",
+        "modules" : {
+          "a" : "tb-resource;/api/resource/js_module/system/Vitaliy sys admin module.js",
+          "b" : "tb-resource;/api/resource/js_module/tenant/module_smoke.js"
+        }
+      },
+      "settingsForm" : [ ],
+      "dataKeySettingsForm" : [ {
+        "id" : "sryh",
+        "name" : "xyt5",
+        "hint" : "tf5ry",
+        "group" : "hvtfr5yh",
+        "type" : "json",
+        "default" : "{\n  \"link\": \"/api/images/system/2071669.png\",\n  \"title\": \"Head and gears.png\",\n  \"type\": \"IMAGE\",\n  \"subType\": \"IMAGE\",\n  \"resourceKey\": \"2071669.png\",\n  \"fileName\": \"images (1).png\",\n  \"publicResourceKey\": \"opiaxHunihiwljM8OKtwDJh5E9MWF3BJ\",\n  \"mediaType\": \"image/png\",\n  \"data\": \"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\",\n  \"public\": true\n}"
+      }, {
+        "id" : "igtt",
+        "name" : "diyr",
+        "hint" : "friy",
+        "group" : "riu",
+        "type" : "image",
+        "default" : "tb-image;/api/images/tenant/code-coding-script-svgrepo-com.svg"
+      }, {
+        "id" : "uuuu",
+        "name" : "jucyt",
+        "hint" : "yj",
+        "group" : "jgy",
+        "type" : "number",
+        "default" : 4,
+        "subLabel" : "4wef",
+        "fieldSuffix" : "a4wt",
+        "rowClass" : "align-start no-border",
+        "fieldClass" : "flex medium-width",
+        "min" : 0,
+        "max" : 100,
+        "step" : 2
+      } ],
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":true,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{},\"title\":\"Attributes card\",\"decimals\":null}"
+    },
+    "externalId" : null,
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "08233d70-ab61-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

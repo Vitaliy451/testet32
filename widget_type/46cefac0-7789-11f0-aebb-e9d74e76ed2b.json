@@ -1,0 +1,65 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "stc_widget",
+    "name" : "STC widget",
+    "deprecated" : false,
+    "image" : "tb-image;/api/images/tenant/Vitaliy tenant icon.png",
+    "description" : "\"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.\"",
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<img src=\"/api/images/public/ccHSVyW541pHiKu4zGw8bl0Y94cpK1x0\" alt=\"no_toilets.svg\" />",
+      "templateCss" : "",
+      "controllerScript" : {
+        "body" : "console.log(a.color + \"\\n\" + b.text);\n\n\nself.onInit = function() {\n    var $injector = self.ctx.$scope.$injector;\n    var utils = $injector.get(self.ctx.servicesMap.get('utils'));\n\n    var cssParser = new cssjs();\n    cssParser.testMode = false;\n    var namespace = 'html-card-' + hashCode(self.ctx.settings.cardCss);\n    cssParser.cssPreviewNamespace = namespace;\n    cssParser.createStyleElement(namespace, self.ctx.settings.cardCss);\n    self.ctx.$container.addClass(namespace);\n    var evtFnPrefix = 'htmlCard_' + Math.abs(hashCode(self.ctx.settings.cardCss + self.ctx.settings.cardHtml + self.ctx.widget.id));\n    cardHtml =  '<div style=\"height:100%\" onclick=\"' + evtFnPrefix + '_onClickFn(event)\">' + \n                self.ctx.settings.cardHtml + \n                '</div>';\n    cardHtml = replaceCustomTranslations(cardHtml);\n    self.ctx.$container.html(cardHtml);\n\n    window[evtFnPrefix + '_onClickFn'] = function (event) {\n        self.ctx.actionsApi.elementClick(event);\n    }\n\n    function hashCode(str) {\n        var hash = 0;\n        var i, char;\n        if (str.length === 0) return hash;\n        for (i = 0; i < str.length; i++) {\n            char = str.charCodeAt(i);\n            hash = ((hash << 5) - hash) + char;\n            hash = hash & hash;\n        }\n        return hash;\n    }\n    \n    function replaceCustomTranslations (pattern) {\n        var customTranslationRegex = new RegExp('{i18n:[^{}]+}', 'g');\n        pattern = pattern.replace(customTranslationRegex, getTranslationText);\n        return pattern;\n    }\n    \n    function getTranslationText (variable) {\n        return utils.customTranslation(variable, variable);\n        \n    }\n}\n\nself.actionSources = function() {\n    return {\n        'elementClick': {\n            name: 'widget-action.element-click',\n            multiple: true\n        }\n    };\n}\n\nself.onDestroy = function() {\n}\n",
+        "modules" : {
+          "a" : "tb-resource;/api/resource/js_module/tenant/Color.js",
+          "b" : "tb-resource;/api/resource/js_module/system/Vitaliy sys admin module.js"
+        }
+      },
+      "settingsForm" : [ {
+        "id" : "jmcgtv mkg",
+        "name" : "vftu",
+        "hint" : "vftuvf",
+        "group" : "v",
+        "type" : "text",
+        "default" : "uyto"
+      } ],
+      "dataKeySettingsForm" : [ {
+        "id" : "gxdrghdgh",
+        "name" : "BFTHBDT",
+        "hint" : "GZSDERGSZR",
+        "group" : "hrxf5thrd5t",
+        "type" : "image",
+        "default" : "tb-image;/api/images/tenant/wind-turbine-hp.svg"
+      }, {
+        "id" : "hp8hn",
+        "name" : "yvf",
+        "hint" : "ytv",
+        "group" : "v",
+        "type" : "number",
+        "default" : 5,
+        "min" : 0,
+        "max" : 100,
+        "step" : 5
+      } ],
+      "settingsDirective" : "tb-html-card-widget-settings",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"cardHtml\":\"<div class='card'>HTML code here</div>\",\"cardCss\":\".card {\\n    font-weight: bold;\\n    font-size: 32px;\\n    color: #999;\\n    width: 100%;\\n    height: 100%;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n}\"},\"title\":\"HTML Card\",\"dropShadow\":true}"
+    },
+    "externalId" : null,
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "46cefac0-7789-11f0-aebb-e9d74e76ed2b"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

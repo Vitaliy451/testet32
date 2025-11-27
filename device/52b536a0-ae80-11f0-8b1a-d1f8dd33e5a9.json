@@ -1,0 +1,67 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel leo ut nibh facilisis cursus vitae vel leo. Pellentesque sed placerat risus, et suscipit lorem. Nullam id feugiat massa. Integer mollis imperdiet sagittis. Cras id aliquam dolor. Nunc nec consectetur massa."
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "32cc0a50-3fa2-11f0-9c7b-2b9d1e0bb750"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "52b536a0-ae80-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "52b536a0-ae80-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "DeviceSmoke",
+    "name" : "DeviceSmoke",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Alert widget"
+  },
+  "credentials" : {
+    "credentialsId" : "78qcq2ohopcdlqggv423",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1761054740558,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1761053300582,
+      "longValue" : 1761053300580,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

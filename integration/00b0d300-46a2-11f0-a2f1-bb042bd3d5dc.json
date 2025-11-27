@@ -1,0 +1,66 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "baseUrl" : "https://pe.tbqa.cloud",
+      "httpEndpoint" : "https://pe.tbqa.cloud/api/v1/integrations/loriot/b176a512-d18d-df13-b5a7-6b1bf34903ac",
+      "enableSecurity" : false,
+      "headersFilter" : { },
+      "replaceNoContentToOk" : false,
+      "createLoriotOutput" : false,
+      "sendDownlink" : true,
+      "server" : "eu1",
+      "domain" : "loriot.io",
+      "appId" : "test",
+      "token" : "test",
+      "credentials" : {
+        "type" : "basic"
+      },
+      "loriotDownlinkUrl" : "https://eu1.loriot.io/1/rest"
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1749633105872,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "488fa310-46a0-11f0-a2f1-bb042bd3d5dc"
+    },
+    "downlinkConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "324c7ab0-46a0-11f0-a2f1-bb042bd3d5dc"
+    },
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "00b0d300-46a2-11f0-a2f1-bb042bd3d5dc"
+    },
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "00b0d300-46a2-11f0-a2f1-bb042bd3d5dc"
+    },
+    "name" : "Loriot integration",
+    "remote" : false,
+    "routingKey" : "b176a512-d18d-df13-b5a7-6b1bf34903ac",
+    "secret" : "i4h083jbe2fs6ewufle0",
+    "type" : "LORIOT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_ip-172-31-17-144",
+      "lastUpdateTs" : 1764232793807,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : "Curabitur feugiat purus nec massa egestas, a sagittis magna imperdiet. Pellentesque eu eros a nisl ultrices posuere at in purus. Nulla tincidunt diam lectus. Phasellus ac tempus mi, sed dignissim est."
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "9bc9fdc0-4838-11f0-9796-0d789fd1d250"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "622017d0-ae81-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "622017d0-ae81-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "SecondSomethingDEvice",
+    "name" : "SecondSomethingDEvice",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "DevProf"
+  },
+  "credentials" : {
+    "credentialsId" : "u4emU4tAcsBLtuvTdvPV",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1761054740579,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1761053720598,
+      "longValue" : 1761053720597,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

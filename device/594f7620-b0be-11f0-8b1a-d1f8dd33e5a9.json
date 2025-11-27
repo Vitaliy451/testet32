@@ -1,0 +1,124 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c14d7fe0-b0bb-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "externalId" : null,
+    "firmwareId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "30f7e580-b0bf-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "594f7620-b0be-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "",
+    "name" : "DeviceWithThatProfile",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "newCreated"
+  },
+  "credentials" : {
+    "credentialsId" : "GYtliVZnFMAQfPBrniI4",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1761310527669,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fw_id",
+      "lastUpdateTs" : 1761299597581,
+      "longValue" : null,
+      "strValue" : "30f7e580-b0bf-11f0-8b1a-d1f8dd33e5a9"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1761310527657,
+      "longValue" : 1761310527652,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1761309914129,
+      "longValue" : 1761309911649,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ {
+    "configuration" : {
+      "type" : "SIMPLE",
+      "arguments" : {
+        "a" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        },
+        "b" : {
+          "defaultValue" : "",
+          "refEntityKey" : {
+            "key" : "t",
+            "type" : "TS_LATEST"
+          }
+        }
+      },
+      "expression" : "a+b",
+      "output" : {
+        "type" : "TIME_SERIES",
+        "name" : "tt",
+        "strategy" : {
+          "type" : "RULE_CHAIN"
+        }
+      },
+      "useLatestTs" : true
+    },
+    "configurationVersion" : 0,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1761310731840,
+      "failuresEnabled" : true
+    },
+    "name" : "tt",
+    "tenantId" : {
+      "entityType" : "TENANT",
+      "id" : "8ea29fe0-15e2-11f0-9be7-3da24f18ba46"
+    },
+    "type" : "SIMPLE"
+  } ]
+}

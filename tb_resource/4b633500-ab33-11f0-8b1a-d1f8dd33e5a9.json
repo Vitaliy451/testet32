@@ -1,0 +1,27 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "VGVzdCBNZXNzYWdlCg==",
+    "descriptor" : {
+      "mediaType" : ""
+    },
+    "etag" : "4ea6a95a3a56fa6b7c1673c145198c52265fea4fe4cebef97249b39c25a733a0",
+    "externalId" : null,
+    "fileName" : "JKS_Test.jks",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "4b633500-ab33-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "link" : "/api/resource/jks/tenant/JKS_Test.jks",
+    "name" : "File for tenants JKS",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "JKS_Test.jks",
+    "resourceSubType" : null,
+    "resourceType" : "JKS",
+    "title" : "File for tenants JKS"
+  }
+}

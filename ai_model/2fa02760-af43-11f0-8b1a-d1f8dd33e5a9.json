@@ -1,0 +1,27 @@
+{
+  "entityType" : "AI_MODEL",
+  "entity" : {
+    "configuration" : {
+      "frequencyPenalty" : null,
+      "maxOutputTokens" : null,
+      "maxRetries" : null,
+      "modelId" : "model",
+      "presencePenalty" : null,
+      "providerConfig" : {
+        "apiKey" : "model",
+        "baseUrl" : "https://api.openai.com/v1"
+      },
+      "provider" : "OPENAI",
+      "temperature" : null,
+      "timeoutSeconds" : null,
+      "topP" : null,
+      "modelType" : "CHAT"
+    },
+    "externalId" : null,
+    "name" : "model",
+    "id" : {
+      "entityType" : "AI_MODEL",
+      "id" : "2fa02760-af43-11f0-8b1a-d1f8dd33e5a9"
+    }
+  }
+}

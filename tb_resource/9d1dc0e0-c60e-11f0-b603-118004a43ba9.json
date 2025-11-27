@@ -1,0 +1,25 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "customerId" : null,
+    "data" : "ZXhwb3J0IGNvbnN0IFRFU1RfU1RSSU5HID0gImEiOw==",
+    "descriptor" : null,
+    "etag" : "289374bd3b6503b4cde42361d8c4b90361669d3f8f5d3c26853f65e1d0b11291",
+    "externalId" : null,
+    "fileName" : "module test.js",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "9d1dc0e0-c60e-11f0-b603-118004a43ba9"
+    },
+    "link" : "/api/resource/js_module/tenant/module test.js",
+    "name" : "module test",
+    "preview" : null,
+    "public" : false,
+    "publicLink" : null,
+    "publicResourceKey" : null,
+    "resourceKey" : "module test.js",
+    "resourceSubType" : "MODULE",
+    "resourceType" : "JS_MODULE",
+    "title" : "module test"
+  }
+}

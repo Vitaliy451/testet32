@@ -1,0 +1,30 @@
+{
+  "entityType" : "OTA_PACKAGE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "checksum" : null,
+    "checksumAlgorithm" : null,
+    "contentType" : null,
+    "data" : null,
+    "dataSize" : null,
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c14d7fe0-b0bb-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "externalId" : null,
+    "fileName" : null,
+    "hasData" : false,
+    "id" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "30f7e580-b0bf-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "name" : "OTA",
+    "tag" : "OTA v2",
+    "title" : "OTA",
+    "type" : "FIRMWARE",
+    "url" : "https://thingsboard.io/docs/user-guide/resources/firmware/http_firmware_client.py",
+    "version" : "v2"
+  }
+}

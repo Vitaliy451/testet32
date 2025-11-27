@@ -1,0 +1,41 @@
+{
+  "entityType" : "ENTITY_VIEW",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4557a330-1aa6-11f0-a348-f5235b8e65fc"
+    },
+    "endTimeMs" : 0,
+    "entityId" : {
+      "entityType" : "DEVICE",
+      "id" : "c4fe4660-24e3-11f0-9149-1b9c175ccfa6"
+    },
+    "externalId" : null,
+    "keys" : {
+      "attributes" : {
+        "cs" : [ "firmware" ],
+        "sh" : [ "active" ],
+        "ss" : [ "firmware" ]
+      },
+      "timeseries" : [ "temperature" ]
+    },
+    "name" : "test2",
+    "startTimeMs" : 0,
+    "type" : "test",
+    "additionalInfo" : {
+      "description" : "test"
+    },
+    "id" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "c5db3a30-93c3-11f0-a580-cf0c98df7704"
+    },
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4557a330-1aa6-11f0-a348-f5235b8e65fc"
+    }
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

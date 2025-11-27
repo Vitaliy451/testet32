@@ -1,0 +1,31 @@
+{
+  "entityType" : "NOTIFICATION_RULE",
+  "entity" : {
+    "additionalConfig" : {
+      "description" : ""
+    },
+    "enabled" : true,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_RULE",
+      "id" : "cbb43250-5362-11f0-af2e-d37affc28189"
+    },
+    "name" : "PE device activated",
+    "recipientsConfig" : {
+      "targets" : [ "42601960-5362-11f0-af2e-d37affc28189", "596188b0-5362-11f0-af2e-d37affc28189" ],
+      "triggerType" : "DEVICE_ACTIVITY"
+    },
+    "templateId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "b52e5ba0-5362-11f0-af2e-d37affc28189"
+    },
+    "triggerConfig" : {
+      "triggerType" : "DEVICE_ACTIVITY",
+      "deviceProfiles" : null,
+      "devices" : [ "c4fe4660-24e3-11f0-9149-1b9c175ccfa6" ],
+      "notifyOn" : [ "ACTIVE" ],
+      "triggerType" : "DEVICE_ACTIVITY"
+    },
+    "triggerType" : "DEVICE_ACTIVITY"
+  }
+}

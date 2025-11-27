@@ -1,0 +1,30 @@
+{
+  "entityType" : "OTA_PACKAGE",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "checksum" : "ef0f04d4085bbfd9bbcfd3208567b19698a24890e080393ac9149b060ecb375d",
+    "checksumAlgorithm" : "SHA256",
+    "contentType" : "application/json",
+    "data" : "ewogICJ0eXBlIjogIlNDUklQVCIsCiAgIm5hbWUiOiAidGVzdCIsCiAgImRlYnVnU2V0dGluZ3MiOiB7CiAgICAiZmFpbHVyZXNFbmFibGVkIjogdHJ1ZSwKICAgICJhbGxFbmFibGVkIjogZmFsc2UsCiAgICAiYWxsRW5hYmxlZFVudGlsIjogMTc1Mzk3NDQ0NjYzOAogIH0sCiAgImNvbmZpZ3VyYXRpb25WZXJzaW9uIjogMCwKICAiY29uZmlndXJhdGlvbiI6IHsKICAgICJ0eXBlIjogIlNDUklQVCIsCiAgICAiYXJndW1lbnRzIjogewogICAgICAiYXR0IjogewogICAgICAgICJyZWZFbnRpdHlLZXkiOiB7CiAgICAgICAgICAia2V5IjogIjciLAogICAgICAgICAgInR5cGUiOiAiQVRUUklCVVRFIiwKICAgICAgICAgICJzY29wZSI6ICJTRVJWRVJfU0NPUEUiCiAgICAgICAgfSwKICAgICAgICAiZGVmYXVsdFZhbHVlIjogIiIKICAgICAgfSwKICAgICAgInN0ciI6IHsKICAgICAgICAicmVmRW50aXR5S2V5IjogewogICAgICAgICAgImtleSI6ICIxNCIsCiAgICAgICAgICAidHlwZSI6ICJUU19MQVRFU1QiCiAgICAgICAgfSwKICAgICAgICAiZGVmYXVsdFZhbHVlIjogIiIKICAgICAgfSwKICAgICAgInRtcCI6IHsKICAgICAgICAicmVmRW50aXR5S2V5IjogewogICAgICAgICAgImtleSI6ICJyYXdEYXRhIiwKICAgICAgICAgICJ0eXBlIjogIlRTX0xBVEVTVCIKICAgICAgICB9LAogICAgICAgICJkZWZhdWx0VmFsdWUiOiAiW3tcInRlc3RfMVwiOjQ1NixcImJcIjoxNX0se1widGVzdF8yXCI6NTV9XSIKICAgICAgfQogICAgfSwKICAgICJleHByZXNzaW9uIjogIi8vIFNhbXBsZSBzY3JpcHQgdG8gY29udmVydCB0ZW1wZXJhdHVyZSByZWFkaW5ncyBmcm9tIEZhaHJlbmhlaXQgdG8gQ2Vsc2l1c1xudmFyIHJlc3VsdCA9IHRtcFswXS5iO1xucmV0dXJue1xuICAgIFwicmVzdWx0XCI6IHJlc3VsdCAqIDIgKyBhdHQgKyBzdHJcbn07IiwKICAgICJvdXRwdXQiOiB7CiAgICAgICJuYW1lIjogIiIsCiAgICAgICJ0eXBlIjogIlRJTUVfU0VSSUVTIgogICAgfQogIH0KfQ==",
+    "dataSize" : 1006,
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "3d893180-78f4-11f0-acfd-cb50e27d53ce"
+    },
+    "externalId" : null,
+    "fileName" : "test (1).json",
+    "hasData" : true,
+    "id" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "5f40c900-78f4-11f0-acfd-cb50e27d53ce"
+    },
+    "name" : "OTA software",
+    "tag" : "OTA software 1.1",
+    "title" : "OTA software",
+    "type" : "SOFTWARE",
+    "url" : null,
+    "version" : "1.1"
+  }
+}

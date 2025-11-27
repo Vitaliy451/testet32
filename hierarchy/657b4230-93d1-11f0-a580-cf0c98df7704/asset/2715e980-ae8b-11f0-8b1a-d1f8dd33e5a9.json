@@ -1,0 +1,33 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Vestibulum elementum euismod velit. Nullam volutpat metus nisl, sit amet posuere arcu egestas id. Nullam vitae ipsum non ante venenatis pharetra eget pretium neque."
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "8ef79db0-15e2-11f0-9be7-3da24f18ba46"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "657b4230-93d1-11f0-a580-cf0c98df7704"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "2715e980-ae8b-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "label" : "AssetDeleteSmoke",
+    "name" : "AssetDeleteSmoke",
+    "ownerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "657b4230-93d1-11f0-a580-cf0c98df7704"
+    },
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  },
+  "calculatedFields" : [ ]
+}

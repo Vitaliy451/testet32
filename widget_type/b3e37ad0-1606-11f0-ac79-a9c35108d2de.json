@@ -1,0 +1,38 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "static_widget",
+    "name" : "Static widget",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "  <div fxFlex fxLayout=\"column\" style=\"height: 100%;\" fxLayoutAlign=\"space-around stretch\">\n    <h3 style=\"text-align: center;\">My first static widget.</h3>\n    <button mat-raised-button color=\"primary\" (click)=\"showAlert()\">Click me</button>\n  </div>",
+      "templateCss" : "",
+      "controllerScript" : "self.onInit = function() {\n\n    self.ctx.$scope.showAlert = function() {\n        var alertContent = self.ctx.settings.alertContent;\n        if (!alertContent) {\n            alertContent = \"Content derived from alertContent property of widget settings.\";\n        }\n        window.alert(alertContent);  \n    };\n\n}",
+      "settingsSchema" : "{\n    \"schema\": {\n        \"type\": \"object\",\n        \"title\": \"Settings\",\n        \"properties\": {\n            \"alertContent\": {\n                \"title\": \"Alert content\",\n                \"type\": \"string\",\n                \"default\": \"Content derived from alertContent property of widget settings.\"\n            }\n        }\n    },\n    \"form\": [\n        \"alertContent\"\n    ]\n}",
+      "dataKeySettingsSchema" : "",
+      "settingsDirective" : "tb-html-card-widget-settings",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":false,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{\"cardHtml\":\"<div class='card'>HTML code here</div>\",\"cardCss\":\".card {\\n    font-weight: bold;\\n    font-size: 32px;\\n    color: #999;\\n    width: 100%;\\n    height: 100%;\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n}\"},\"title\":\"HTML Card\",\"dropShadow\":true}"
+    },
+    "externalId" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "b3e37ad0-1606-11f0-ac79-a9c35108d2de"
+    },
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "b3e37ad0-1606-11f0-ac79-a9c35108d2de"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

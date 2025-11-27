@@ -1,0 +1,32 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ROLE",
+      "id" : "468baf00-1aa9-11f0-a348-f5235b8e65fc"
+    },
+    "name" : "Customer with permission for scheduler",
+    "permissions" : {
+      "ALL" : [ "ALL" ],
+      "RULE_CHAIN" : [ "ALL" ],
+      "SCHEDULER_EVENT" : [ "ALL" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "468baf00-1aa9-11f0-a348-f5235b8e65fc"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

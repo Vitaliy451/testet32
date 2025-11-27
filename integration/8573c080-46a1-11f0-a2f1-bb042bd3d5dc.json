@@ -1,0 +1,70 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "clientConfiguration" : {
+        "host" : "ua.cloud.thethings.industries",
+        "customHost" : false,
+        "port" : 8883,
+        "ssl" : true,
+        "maxBytesInMessage" : 32368,
+        "connectTimeoutSec" : 10,
+        "protocolVersion" : "MQTT_3_1_1",
+        "credentials" : {
+          "type" : "basic",
+          "username" : "test",
+          "password" : "test"
+        }
+      },
+      "topicFilters" : [ {
+        "filter" : "v3/+/devices/+/up",
+        "qos" : 0
+      } ],
+      "downlinkTopicPattern" : "v3/test/devices/${devId}/down/push"
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1749632899112,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "6e6c96c0-469f-11f0-a2f1-bb042bd3d5dc"
+    },
+    "downlinkConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "5cd36e70-469f-11f0-a2f1-bb042bd3d5dc"
+    },
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "8573c080-46a1-11f0-a2f1-bb042bd3d5dc"
+    },
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "8573c080-46a1-11f0-a2f1-bb042bd3d5dc"
+    },
+    "name" : "The Things Stack Industries integration",
+    "remote" : false,
+    "routingKey" : "a0b97afd-13dc-9935-a52f-2c3cba50c6a1",
+    "secret" : "p8uuv48psv7sll7n6ze3",
+    "type" : "TTI"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":false,\"serviceId\":\"ip-172-31-17-144\",\"error\":\"java.lang.RuntimeException: Failed to connect to MQTT broker at ua.cloud.thethings.industries:8883.\\n\\tat org.thingsboard.integration.mqtt.AbstractMqttIntegration.initClient(AbstractMqttIntegration.java:264)\\n\\tat org.thingsboard.integration.mqtt.basic.BasicMqttIntegration.init(BasicMqttIntegration.java:92)\\n\\tat org.thingsboard.integration.mqtt.AbstractMqttIntegration.update(AbstractMqttIntegration.java:117)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.processUpdateEvent(DefaultIntegrationManagerService.java:623)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.lambda$reInitIntegrations$12(DefaultIntegrationManagerService.java:719)\\n\\tat java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780)\\n\\tat org.thingsboard.server.service.integration.DefaultIntegrationManagerService.reInitIntegrations(DefaultIntegrationManagerService.java:715)\\n\\tat org.thingsboard.common.util.ThingsBoardScheduledThreadPoolExecutor$PeriodicRunnable.run(ThingsBoardScheduledThreadPoolExecutor.java:67)\\n\\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)\\n\\tat java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)\\n\\tat java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\\n\\tat java.base/java.lang.Thread.run(Thread.java:840)\\n\"}",
+      "key" : "integration_status_ip-172-31-17-144",
+      "lastUpdateTs" : 1764254401606,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}

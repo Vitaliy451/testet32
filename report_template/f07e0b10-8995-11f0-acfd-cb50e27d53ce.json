@@ -1,0 +1,98 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "color" : "#000",
+        "dataSources" : [ ],
+        "font" : {
+          "family" : "Roboto",
+          "size" : 40.0,
+          "style" : "normal",
+          "weight" : "normal"
+        },
+        "height" : null,
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "textAlignment" : "center",
+        "type" : "HEADING",
+        "value" : "青い空に昇る太陽",
+        "verticalAlignment" : "middle"
+      }, {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ ],
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "type" : "RICH_TEXT",
+        "value" : "<p style=\"line-height: 1.5;\">שמש זורחת בשמיים הכחולים</p>"
+      }, {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ ],
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "type" : "RICH_TEXT",
+        "value" : "<div id=\"tw-target-text-container\" class=\"tw-ta-container tw-lfl\" tabindex=\"0\" role=\"text\">\n<pre id=\"tw-target-text\" class=\"tw-data-text tw-text-large tw-ta\" dir=\"rtl\" data-placeholder=\"Translation\" data-ved=\"2ahUKEwj-gN_Tlb-PAxXTExAIHQ8AJgsQ3ewLegQIChAW\" aria-label=\"Translated text: شروق الشمس في السماء الزرقاء\"><span class=\"Y2IQFc\" lang=\"ar\">شروق الشمس في السماء الزرقاء</span></pre>\n</div>\n<div id=\"tw-target-rmn-container\" class=\"tw-target-rmn tw-ta-container tw-nfl\" tabindex=\"0\" role=\"text\"></div>"
+      } ],
+      "entityAliases" : [ ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "PORTRAIT",
+      "pageSize" : "A4",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "f07e0b10-8995-11f0-acfd-cb50e27d53ce"
+    },
+    "name" : "test",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "",
+      "allowWhiteLabeling" : true,
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : null,
+    "country" : null,
+    "customMenuId" : null,
+    "customerId" : null,
+    "email" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ce437260-93d1-11f0-a580-cf0c98df7704"
+    },
+    "name" : "Astronaut",
+    "ownerId" : null,
+    "parentCustomerId" : null,
+    "phone" : null,
+    "state" : null,
+    "title" : "Astronaut",
+    "zip" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "CUSTOMER",
+      "id" : "ce437260-93d1-11f0-a580-cf0c98df7704"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "b2c43f80-9e0b-11f0-883e-691a0b202e37"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 123891
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

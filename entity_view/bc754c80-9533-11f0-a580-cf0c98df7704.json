@@ -1,0 +1,141 @@
+{
+  "entityType" : "ENTITY_VIEW",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "endTimeMs" : 0,
+    "entityId" : {
+      "entityType" : "ASSET",
+      "id" : "e4543f40-1f95-11f0-9149-1b9c175ccfa6"
+    },
+    "externalId" : null,
+    "keys" : {
+      "attributes" : {
+        "cs" : null,
+        "sh" : null,
+        "ss" : null
+      },
+      "timeseries" : null
+    },
+    "name" : "bitcoin$$$",
+    "startTimeMs" : 0,
+    "type" : "Mambo",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "bc754c80-9533-11f0-a580-cf0c98df7704"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "a05f2d60-1c32-11f0-806a-4706593981a3"
+    },
+    "to" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "bc754c80-9533-11f0-a580-cf0c98df7704"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 123715
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "e8dac8c0-93c8-11f0-a580-cf0c98df7704"
+    },
+    "to" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "bc754c80-9533-11f0-a580-cf0c98df7704"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 123725
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "04824690-9534-11f0-a580-cf0c98df7704"
+    },
+    "to" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "bc754c80-9533-11f0-a580-cf0c98df7704"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 123724
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "fake",
+      "lastUpdateTs" : 1758620912321,
+      "longValue" : 21,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "server_1",
+      "lastUpdateTs" : 1758619823603,
+      "longValue" : 12,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "server_10",
+      "lastUpdateTs" : 1758625964284,
+      "longValue" : null,
+      "strValue" : "sz"
+    }, {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "server_3",
+      "lastUpdateTs" : 1758620123750,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "server_5",
+      "lastUpdateTs" : 1758625919573,
+      "longValue" : null,
+      "strValue" : "t"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "server_7",
+      "lastUpdateTs" : 1758625934755,
+      "longValue" : null,
+      "strValue" : "mhj"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "server_8",
+      "lastUpdateTs" : 1758625943397,
+      "longValue" : null,
+      "strValue" : "jhkk"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "server_9",
+      "lastUpdateTs" : 1758625954818,
+      "longValue" : null,
+      "strValue" : "hj"
+    } ]
+  }
+}

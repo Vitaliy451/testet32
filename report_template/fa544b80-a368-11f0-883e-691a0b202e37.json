@@ -1,0 +1,138 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ {
+          "alarmFilterConfig" : {
+            "assigneeId" : null,
+            "searchPropagatedAlarms" : false,
+            "severityList" : null,
+            "statusList" : [ "ACTIVE" ],
+            "typeList" : null
+          },
+          "dataKeys" : [ {
+            "aggregationType" : null,
+            "color" : null,
+            "decimals" : null,
+            "label" : "Name",
+            "name" : "name",
+            "postFuncBody" : null,
+            "settings" : null,
+            "timewindow" : null,
+            "type" : "entityField",
+            "units" : null,
+            "usePostProcessing" : false
+          }, {
+            "aggregationType" : "NONE",
+            "color" : "#4caf50",
+            "decimals" : 0,
+            "label" : "temperature",
+            "name" : "temperature",
+            "postFuncBody" : "if (value == null) {\n    return \"n/a\";\n} else return value;",
+            "settings" : {
+              "cell" : null,
+              "columnWidth" : null,
+              "header" : null,
+              "type" : "COLUMN"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : null,
+            "usePostProcessing" : true
+          } ],
+          "deviceId" : null,
+          "entityAliasId" : "1af4106c-bf98-46a5-82fb-e950be3318ab",
+          "filterId" : null,
+          "latestDataKeys" : null,
+          "type" : "entity"
+        } ],
+        "margins" : {
+          "bottom" : 0,
+          "left" : 0,
+          "right" : 0,
+          "top" : 20
+        },
+        "paddings" : null,
+        "showTableHeading" : false,
+        "subType" : null,
+        "tableHeading" : {
+          "color" : "#000",
+          "font" : {
+            "family" : "Roboto",
+            "size" : 20.0,
+            "style" : "normal",
+            "weight" : "normal"
+          },
+          "height" : 40,
+          "text" : "Entities",
+          "textAlignment" : "center",
+          "verticalAlignment" : "middle"
+        },
+        "tableSortOrder" : {
+          "column" : "Name",
+          "direction" : "ASC"
+        },
+        "type" : "ENTITY_TABLE"
+      } ],
+      "entityAliases" : [ {
+        "alias" : "devices",
+        "filter" : {
+          "type" : "entityType",
+          "entityType" : "DEVICE"
+        },
+        "id" : "1af4106c-bf98-46a5-82fb-e950be3318ab"
+      } ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "PORTRAIT",
+      "pageSize" : "A4",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "fa544b80-a368-11f0-883e-691a0b202e37"
+    },
+    "name" : "test",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

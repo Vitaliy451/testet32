@@ -1,0 +1,24 @@
+{
+  "entityType" : "NOTIFICATION_TARGET",
+  "entity" : {
+    "configuration" : {
+      "type" : "SLACK",
+      "conversation" : {
+        "email" : null,
+        "id" : "C05BZ4VKHDF",
+        "name" : "testproject",
+        "type" : "PUBLIC_CHANNEL",
+        "wholeName" : "testproject",
+        "title" : "testproject"
+      },
+      "conversationType" : "PUBLIC_CHANNEL",
+      "description" : "slack test"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TARGET",
+      "id" : "596188b0-5362-11f0-af2e-d37affc28189"
+    },
+    "name" : "Slack"
+  }
+}

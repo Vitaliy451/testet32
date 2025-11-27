@@ -1,0 +1,177 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "PDF",
+      "components" : [ {
+        "background" : null,
+        "borderColor" : null,
+        "borderRadius" : null,
+        "borderWidth" : null,
+        "dataSources" : [ {
+          "alarmFilterConfig" : {
+            "assigneeId" : null,
+            "searchPropagatedAlarms" : false,
+            "severityList" : null,
+            "statusList" : [ "ACTIVE" ],
+            "typeList" : null
+          },
+          "dataKeys" : [ {
+            "aggregationType" : "NONE",
+            "color" : null,
+            "decimals" : null,
+            "label" : "temperature",
+            "name" : "temperature",
+            "postFuncBody" : "return '<span style=\"color: red;\">' + value + '</span>';",
+            "settings" : {
+              "type" : "DEFAULT"
+            },
+            "timewindow" : null,
+            "type" : "timeseries",
+            "units" : "°C",
+            "usePostProcessing" : true
+          } ],
+          "deviceId" : "c4fe4660-24e3-11f0-9149-1b9c175ccfa6",
+          "entityAliasId" : null,
+          "filterId" : null,
+          "latestDataKeys" : null,
+          "type" : "device"
+        } ],
+        "margins" : null,
+        "paddings" : null,
+        "subType" : null,
+        "type" : "RICH_TEXT",
+        "value" : "<p style=\"line-height: 1.5;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero orci, faucibus in iaculis quis, vestibulum sit amet ligula. Nulla facilisi. Ut ut iaculis tortor.<br>test: ${temperature}</p>"
+      } ],
+      "entityAliases" : [ {
+        "alias" : "All devices",
+        "filter" : {
+          "type" : "entityType",
+          "entityType" : "DEVICE"
+        },
+        "id" : "59a989f2-45c8-fe32-d4b4-3ed35677e7c3"
+      } ],
+      "filters" : [ ],
+      "footer" : {
+        "components" : [ ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "format" : "PDF",
+      "header" : {
+        "components" : [ {
+          "background" : null,
+          "borderColor" : null,
+          "borderRadius" : null,
+          "borderWidth" : null,
+          "dataSources" : [ {
+            "alarmFilterConfig" : {
+              "assigneeId" : null,
+              "searchPropagatedAlarms" : false,
+              "severityList" : null,
+              "statusList" : [ "ACTIVE" ],
+              "typeList" : null
+            },
+            "dataKeys" : [ {
+              "aggregationType" : null,
+              "color" : null,
+              "decimals" : null,
+              "label" : "Name",
+              "name" : "name",
+              "postFuncBody" : null,
+              "settings" : null,
+              "timewindow" : null,
+              "type" : "entityField",
+              "units" : null,
+              "usePostProcessing" : false
+            }, {
+              "aggregationType" : null,
+              "color" : null,
+              "decimals" : 0,
+              "label" : "Owner name",
+              "name" : "ownerName",
+              "postFuncBody" : null,
+              "settings" : {
+                "cell" : null,
+                "columnWidth" : null,
+                "header" : null,
+                "type" : "COLUMN"
+              },
+              "timewindow" : null,
+              "type" : "entityField",
+              "units" : null,
+              "usePostProcessing" : false
+            } ],
+            "deviceId" : "cf8ccf60-a4f5-11f0-883e-691a0b202e37",
+            "entityAliasId" : null,
+            "filterId" : null,
+            "latestDataKeys" : null,
+            "type" : "device"
+          } ],
+          "margins" : {
+            "bottom" : 0,
+            "left" : 0,
+            "right" : 0,
+            "top" : 20
+          },
+          "paddings" : null,
+          "showTableHeading" : false,
+          "subType" : null,
+          "tableHeading" : {
+            "color" : "#000",
+            "font" : {
+              "family" : "Roboto",
+              "size" : 20.0,
+              "style" : "normal",
+              "weight" : "normal"
+            },
+            "height" : 40,
+            "text" : "Entities",
+            "textAlignment" : "center",
+            "verticalAlignment" : "middle"
+          },
+          "tableSortOrder" : {
+            "column" : "Name",
+            "direction" : "ASC"
+          },
+          "type" : "ENTITY_TABLE"
+        } ],
+        "enabled" : true,
+        "firstPage" : {
+          "components" : [ ],
+          "enabled" : false,
+          "firstPage" : null
+        }
+      },
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "pageBackground" : "#fff",
+      "pageMargins" : {
+        "bottom" : 20,
+        "left" : 20,
+        "right" : 20,
+        "top" : 20
+      },
+      "pageOrientation" : "PORTRAIT",
+      "pageSize" : "A4",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "PDF",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "fe7c67e0-a298-11f0-883e-691a0b202e37"
+    },
+    "name" : "device",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "alien_svgrepo_com_svg2",
+    "name" : "alien-svgrepo-com.svg",
+    "deprecated" : false,
+    "image" : "tb-image;/api/images/tenant/alien-svgrepo-com.svg",
+    "description" : null,
+    "descriptor" : {
+      "type" : "rpc",
+      "sizeX" : 8,
+      "sizeY" : 4.5,
+      "resources" : [ ],
+      "templateHtml" : "<tb-scada-symbol-widget\n    [ctx]='ctx'\n    [widgetTitlePanel]=\"widgetTitlePanel\">\n</tb-scada-symbol-widget>",
+      "templateCss" : "",
+      "controllerScript" : {
+        "body" : "console.log(a.color);\n\nself.onInit = function() {\n    self.ctx.$scope.actionWidget.onInit();\n}\n\nself.typeParameters = function() {\n    return {\n        previewWidth: '100px',\n        previewHeight: '120px',\n        embedTitlePanel: true,\n        targetDeviceOptional: true,\n        displayRpcMessageToast: false\n    };\n};\n\nself.onDestroy = function() {\n}\n",
+        "modules" : {
+          "a" : "tb-resource;/api/resource/js_module/tenant/Color.js"
+        }
+      },
+      "dataKeySettingsForm" : [ ],
+      "settingsDirective" : "tb-scada-symbol-widget-settings",
+      "hasBasicMode" : true,
+      "basicModeDirective" : "tb-scada-symbol-basic-config",
+      "defaultConfig" : "{\"showTitle\":true,\"backgroundColor\":\"rgba(0, 0, 0, 0)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"0px\",\"settings\":{\"background\":{\"type\":\"color\",\"imageUrl\":null,\"color\":\"rgb(255, 255, 255)\",\"overlay\":{\"enabled\":false,\"color\":\"rgba(255,255,255,0.72)\",\"blur\":3}},\"padding\":\"12px\",\"scadaSymbolUrl\":\"tb-image;/api/images/tenant/alien-svgrepo-com.svg\",\"scadaSymbolObjectSettings\":{\"behavior\":{},\"properties\":{}}},\"title\":\"alien-svgrepo-com.svg\",\"dropShadow\":true,\"enableFullscreen\":false,\"widgetStyle\":{},\"actions\":{},\"widgetCss\":\"\",\"noDataDisplayMessage\":\"\",\"titleFont\":{\"size\":16,\"sizeUnit\":\"px\",\"family\":\"Roboto\",\"weight\":\"500\",\"style\":null,\"lineHeight\":\"1.6\"},\"showTitleIcon\":false,\"titleTooltip\":\"\",\"titleStyle\":null,\"pageSize\":1024,\"titleIcon\":\"mdi:lightbulb-outline\",\"iconColor\":\"rgba(0, 0, 0, 0.87)\",\"iconSize\":\"24px\",\"configMode\":\"basic\",\"targetDevice\":null,\"titleColor\":null,\"borderRadius\":\"0px\",\"margin\":\"0px\"}"
+    },
+    "externalId" : null,
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "0b73ac60-5019-11f0-a79c-6f5aaf0de590"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

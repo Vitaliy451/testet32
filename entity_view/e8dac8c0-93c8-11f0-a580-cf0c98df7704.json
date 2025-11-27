@@ -1,0 +1,51 @@
+{
+  "entityType" : "ENTITY_VIEW",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "endTimeMs" : 0,
+    "entityId" : {
+      "entityType" : "DEVICE",
+      "id" : "86186591-6d5c-11f0-ba77-abb3c210cae5"
+    },
+    "externalId" : null,
+    "keys" : {
+      "attributes" : {
+        "cs" : [ "model" ],
+        "sh" : [ "model" ],
+        "ss" : null
+      },
+      "timeseries" : null
+    },
+    "name" : "Device",
+    "startTimeMs" : 0,
+    "type" : "test",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "e8dac8c0-93c8-11f0-a580-cf0c98df7704"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "e8dac8c0-93c8-11f0-a580-cf0c98df7704"
+    },
+    "to" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "bc754c80-9533-11f0-a580-cf0c98df7704"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON",
+    "version" : 123725
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

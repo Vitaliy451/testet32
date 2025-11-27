@@ -1,0 +1,138 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "40c82400-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "40c62830-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "name" : "SI Count Alarms (Remote Farm)",
+    "root" : false,
+    "type" : "EDGE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 0,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 367,
+        "layoutY" : 153
+      },
+      "configuration" : {
+        "alarmsCountMappings" : [ {
+          "target" : "criticalAlarmsCount",
+          "typesList" : [ ],
+          "severityList" : [ "CRITICAL" ],
+          "statusList" : [ "ACTIVE_UNACK", "ACTIVE_ACK" ]
+        }, {
+          "target" : "majorAlarmsCount",
+          "typesList" : [ ],
+          "severityList" : [ "MAJOR", "MINOR", "WARNING", "INDETERMINATE" ],
+          "statusList" : [ "ACTIVE_UNACK", "ACTIVE_ACK" ]
+        } ],
+        "countAlarmsForPropagationEntities" : true,
+        "propagationEntityTypes" : [ "ASSET" ],
+        "outMsgType" : "POST_ATTRIBUTES_REQUEST"
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "40c82400-b017-11f0-8b1a-d1f8dd33e5a9"
+      },
+      "name" : "Count Alarms",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.latest.alarm.TbAlarmsCountNodeV2"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 688,
+        "layoutY" : 153
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "40c84b10-b017-11f0-8b1a-d1f8dd33e5a9"
+      },
+      "name" : "Save as attribute",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "40de1d00-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "40c62830-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 134682
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "40eac730-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "40c62830-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 134750
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "40f4d950-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "40c62830-b017-11f0-8b1a-d1f8dd33e5a9"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 134799
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

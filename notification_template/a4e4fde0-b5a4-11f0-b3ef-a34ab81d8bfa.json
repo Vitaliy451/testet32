@@ -1,0 +1,26 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "EMAIL" : {
+          "method" : "EMAIL",
+          "body" : "<p>hello</p>",
+          "enabled" : true,
+          "subject" : "Test"
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "a4e4fde0-b5a4-11f0-b3ef-a34ab81d8bfa"
+    },
+    "name" : "NewTemplateReport",
+    "notificationType" : "REPORT_GENERATED"
+  }
+}

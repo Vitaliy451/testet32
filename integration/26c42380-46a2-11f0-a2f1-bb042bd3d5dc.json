@@ -1,0 +1,60 @@
+{
+  "entityType" : "INTEGRATION",
+  "entity" : {
+    "additionalInfo" : null,
+    "allowCreateDevicesOrAssets" : true,
+    "configuration" : {
+      "metadata" : { },
+      "baseUrl" : "https://pe.tbqa.cloud",
+      "httpEndpoint" : "https://pe.tbqa.cloud/api/v1/integrations/thingpark/04718322-2ceb-f588-d529-c5a51c6af3d6",
+      "enableSecurity" : false,
+      "replaceNoContentToOk" : false,
+      "downlinkUrl" : "https://api.thingpark.com/thingpark/lrc/rest/downlink",
+      "enableSecurityNew" : false,
+      "asId" : "",
+      "asIdNew" : "",
+      "asKey" : "",
+      "clientIdNew" : "",
+      "clientSecret" : "",
+      "maxTimeDiffInSeconds" : 60
+    },
+    "debugMode" : false,
+    "debugSettings" : {
+      "allEnabled" : false,
+      "allEnabledUntil" : 1749633169752,
+      "failuresEnabled" : true
+    },
+    "defaultConverterId" : {
+      "entityType" : "CONVERTER",
+      "id" : "9674bcf0-46a0-11f0-a2f1-bb042bd3d5dc"
+    },
+    "downlinkConverterId" : null,
+    "edgeTemplate" : false,
+    "enabled" : true,
+    "externalId" : {
+      "entityType" : "INTEGRATION",
+      "id" : "26c42380-46a2-11f0-a2f1-bb042bd3d5dc"
+    },
+    "id" : {
+      "entityType" : "INTEGRATION",
+      "id" : "26c42380-46a2-11f0-a2f1-bb042bd3d5dc"
+    },
+    "name" : "ThingPark integration",
+    "remote" : false,
+    "routingKey" : "04718322-2ceb-f588-d529-c5a51c6af3d6",
+    "secret" : "cgr5p7bbhbjjikkpm8hc",
+    "type" : "THINGPARK"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : "{\"success\":true}",
+      "key" : "integration_status_ip-172-31-17-144",
+      "lastUpdateTs" : 1764232817567,
+      "longValue" : null,
+      "strValue" : null
+    } ]
+  }
+}
